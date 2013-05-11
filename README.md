@@ -1,4 +1,4 @@
-GalaticDrama
+GalacticDrama
 ============
 
 Just another brochureware site

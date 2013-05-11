@@ -6,7 +6,7 @@ effects = {
 	slide: function ($element) {
 		// hide all the contents inside the element first
 		$('input[type=submit], input[type=reset], label, fieldset input', $element).addClass('invisible');
-		
+
 		if ($element.hasClass('hidden')) {
 			$element.slideDown(2000, function () {
 				$element.addClass('glass');
@@ -21,7 +21,7 @@ effects = {
 				//$('input, label', $element).css({opacity: 0});
 			});
 			$element.addClass('hidden');
-			
+
 		}
 	},
 	arrow: function ($element) {
@@ -29,22 +29,23 @@ effects = {
 	},
 	showContent: function ($element) {
 		$('input[type=submit], input[type=reset], label, fieldset input', $element).removeClass('invisible');
-	},
-	equalise: function ($element) {
-		$element.equaliser();
 	}
 };
 
 var map = {} || window.map;
 map = {
 	init: function () {
-		var id = 'map-container',
-			offset = $('#introduction a').offset(),
-			left = offset.left + 100,
-			top = offset.top - 240;
-			
-		$('#introduction').append('<div id="map-outerbox" class="glass"><a href="#" class="close">Close</a><div id="' + id + '"></div></div>');
-		$('#map-outerbox').css({left: left, top: top});
+		var id = 'map-container';
+
+		$('#introduction').append('<div id="map-outerbox" class="glass">' +
+			'<a href="#" class="close" title="Close">X</a><div id="' + id + '"></div>' +
+			'</div>');
+
+		$('#map-outerbox').css({
+			left: (window.innerWidth / 2) - $('#map-outerbox').width() / 2,
+			top: 40
+		});
+
 		this.createMap(id);
 		this.ui($('#map-outerbox a'));
 	},
@@ -59,7 +60,7 @@ map = {
 		googleMap = new google.maps.Map(document.getElementById(id), mapOptions),
 		// setting up the marker for the position on the map
 		marker = new google.maps.Marker({
-			position: location, 
+			position: location,
 			map: googleMap,
 			title: "Mandy Godding's Theatre Arts"
 		});
@@ -73,9 +74,9 @@ map = {
 		$('#map-outerbox').remove();
 		$('a').one('click', function (e) {
 			e.preventDefault();
-			map.init();	
+			map.init();
 		});
-	}	
+	}
 };
 
 var form = {} || window.form;
@@ -103,8 +104,8 @@ form = {
 					$(this).siblings('p.error').remove();
 				}
 			}
-			
-		
+
+
 		});
 	}
 
@@ -120,9 +121,8 @@ $(document).ready(function () {
 	});
 	$('a').one('click', function (e) {
 		e.preventDefault();
-		map.init();	
+		map.init();
 	});
-	effects.equalise($('#columns'));
 	$('form').submit(function (e) {
 		form.validation(e);
 	});
