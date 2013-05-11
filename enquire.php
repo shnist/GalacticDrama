@@ -16,7 +16,7 @@
 	</head>
 	<body>
         <div id="content">
-            <h1>Jedi Drama</h1>
+            <h1>Jedi Parties</h1>
 				<?php
 					if (isset($_POST["submit"]) === true || $_POST['submit-keyboard-fallback'] === 'submit') {
 						// all values of the form stored in variables
@@ -41,7 +41,7 @@
 						mail($toEmail, $emailSubject, $body, $mailheader) or die ("Failure");
 
 						echo "<p id='strap-line'>Thanks for your enquiry. We'll get back to you shortly!
-							<a href='parties.html' class='back'>Back to Jedi Party</a></p>";
+							<a href='parties.html' class='back'>Back to Jedi Parties</a></p>";
 					}
 				?>
 		</div>

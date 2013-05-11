@@ -86,7 +86,6 @@ form = {
 
 
 $(document).ready(function () {
-	effects.hide($('form'));
 	$('.register-title a').one('click', function () {
 		effects.slide($('.slide'));
 		$('html').scrollTop($('form').scrollTop());
