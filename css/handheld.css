@@ -1,0 +1,35 @@
+/* mobile stylesheet for galactic drama */
+
+	#content{
+		width: 400px;
+	}
+	.col{
+		width: 377px;
+	}
+	h1{
+		font-size: 50px;
+	}
+	#introduction li{
+		width: 360px;
+	}
+	#footer p{
+		width: 360px;
+	}
+	#map-outerbox{
+		position: inherit;
+		margin: 0 auto 10px;
+	}
+	#map-outerbox .close{
+		position: inherit;
+		float: left;
+		margin: 5px 0 0 5px;
+	}
+	#map-container{
+		left: 0;
+	}
+	form{
+		padding: 0;
+	}
+	form li{
+		margin: 15px 0 15px 15px;
+	}

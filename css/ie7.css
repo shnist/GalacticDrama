@@ -1,0 +1,28 @@
+/** ie7 for galactic drama **/
+
+label{
+	display: inline;
+	zoom: 1;
+}
+#map-outerbox .close{
+	display: inline;
+	zoom: 1;
+}
+.col{
+	display: inline;
+	zoom: 1;
+}
+.col p{
+	display: inline;
+	zoom: 1;
+}
+#register-title span {
+	display: inline;
+	zoom: 1;
+}
+#introduction{
+	margin: 0 auto 20px auto;
+}
+#footer p{
+	padding: 15px 0 0 0;
+}

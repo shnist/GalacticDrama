@@ -1,0 +1,347 @@
+/** Styles for Galaxy Drama **/
+
+
+@media screen and (max-width: 480px) {
+	#content{
+		width: 400px;
+	}
+	.col{
+		width: 377px;
+	}
+	h1{
+		font-size: 50px;
+	}
+	#introduction li{
+		width: 360px;
+	}
+	#footer p{
+		width: 360px;
+	}
+	#map-outerbox{
+		position: inherit;
+		margin: 0 auto 10px;
+	}
+	#map-outerbox .close{
+		position: inherit;
+		float: left;
+		margin: 5px 0 0 5px;
+	}
+	#map-container{
+		left: 0;
+	}
+	form{
+		padding: 0;
+	}
+	form li{
+		margin: 15px 0 15px 15px;
+	}
+}
+
+
+/** fonts **/
+
+/** star jedi hollow **/
+@font-face {
+    font-family: 'Star Jedi Hollow';
+    src: url(../fonts/star_jedi_hollow/starjhol-webfont.eot);
+    src: url(../fonts/star_jedi_hollow/starjhol-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/star_jedi_hollow/starjhol-webfont.woff) format('woff'),
+         url(../fonts/star_jedi_hollow/starjhol-webfont.ttf) format('truetype'),
+         url(../fonts/star_jedi_hollow/starjhol-webfont.svg#StarJediHollowRegular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/** star jedi double **/
+@font-face {
+    font-family: 'StarJediLogoDoubleLine1';
+    src: url(../fonts/star_jedi_double/stjldbl1-webfont.eot);
+    src: url(../fonts/star_jedi_double/stjldbl1-webfont.eot?#iefix) format('embedded-opentype'),
+         url(../fonts/star_jedi_double/stjldbl1-webfont.woff) format('woff'),
+         url(../fonts/star_jedi_double/stjldbl1-webfont.ttf) format('truetype'),
+         url(../fonts/star_jedi_double/stjldbl1-webfont.svg#StarJediLogoDoubleLine1Rg) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/** tie wing **/
+@font-face {
+    font-family: 'TIE-Wing';
+    src: url('../fonts/tie_wing/tiewing-webfont.eot');
+    src: url('../fonts/tie_wing/tiewing-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/tie_wing/tiewing-webfont.woff') format('woff'),
+         url('../fonts/tie_wing/tiewing-webfont.ttf') format('truetype'),
+         url('../fonts/tie_wing/tiewing-webfont.svg#TIE-WingRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body, html{
+	margin: 0;
+	padding: 0;
+	color: #FFF;
+	background: #000 url(../images/bg_stars.jpg) repeat-x;
+	font-family: Droid Sans, Verdana, sans-serif;
+}
+#content{
+	margin: 0 auto;
+	width: 950px;
+}
+#gradient{
+	background: transparent url(../images/bg_gradient.png) repeat-x;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+em{
+	font-style: normal;
+	margin: 0 0 0 5px;
+}
+a{
+	color: #fff;
+}
+a:hover{
+	color: #116eb6;
+	cursor: pointer;
+}
+pre{
+	display: inline;
+	padding: 0;
+	margin: 0 5px 0 0;
+	font-family: TIE-Wing, sans-serif;
+	font-size: 20px;
+}
+
+
+
+/** common classes **/
+
+.hidden{
+	display: none;
+}
+.glass{
+	-webkit-box-shadow: inset 2px 2px 13px 1px #7fc0c4;
+    box-shadow: inset 2px 2px 13px 1px #7fc0c4;	
+}
+.invisible{
+	opacity: 0;
+}
+.error{
+	color: #d01414;
+	display: inline-block;
+	margin: 0 0 0 10px;
+}
+.back{
+	display: block;
+}
+
+/** Headings **/
+
+h1{
+	text-align: center;
+	font-family: Star Jedi Hollow, sans-serif;
+	font-size: 100px;
+	margin: 10px 0 0 0;
+	padding: 0;	
+}
+h2, em{
+	font-family: StarJediLogoDoubleLine1, sans-serif;
+	font-weight: normal;
+}
+
+
+/** content **/
+
+li, p{
+	font-size: 16px;
+}
+li{
+	margin: 15px 0;
+}
+li em{
+	font-family: Droid Sans, sans-serif;
+	font-weight: bold;
+	margin: 0;
+	text-decoration: underline;
+}
+li em:hover{
+	cursor: pointer;
+}
+#strap-line{
+	text-align: center;
+	font-size: 20px;
+	margin: 0 0 20px 0;
+	padding: 0 0 20px 0;
+	border-bottom: 3px solid #FFF;
+}
+#introduction{
+	text-align: center;
+	list-style: none;
+	border-bottom: 3px solid #FFF;
+	margin: 0;
+	padding: 0;	
+}
+#introduction li{
+	margin: 10px auto 10px;
+}
+#introduction li:last-child{
+	margin: 10px auto 20px;
+}
+
+.col{
+	width: 435px;
+	display: inline-block;
+	vertical-align: top;
+	margin: 20px 10px 0 0;
+	padding: 10px 0 10px 17px;
+	border-top: 5px solid #a5f2f7;
+	border-left: 5px solid #a5f2f7;
+	border-radius: 5px;	
+}
+.col ul{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.col h2{
+	margin: 0 0 20px 0;
+}
+.col p{
+	display: inline-block;
+	width: 300px;
+	vertical-align: top;
+	padding: 0;
+	margin: 4px 0 0 4px;
+}
+
+/** Form **/
+
+#register-title{
+	border-top: 3px solid #FFF;
+	padding: 20px 0 5px 0;
+	margin: 10px 0 30px 0;
+	text-align: center;
+	font-size: 30px;
+}
+#register-title span {
+	text-decoration: underline;
+	display: inline-block;
+	padding: 3px 40px 3px 0;
+	background: transparent url(../images/arrows.png) no-repeat;
+}
+#register-title span{
+	 background-position: 430px 20px;	
+}
+#register-title span:hover,
+#register-title span:active{
+	cursor: pointer;
+	color: #116EB6;
+	background-position: 430px -227px;
+}
+#register-title .clicked{
+	background-position: 430px -125px;
+}
+#register-title .clicked:hover,
+#register-title .clicked:active{
+	background-position: 430px -357px;
+}
+form{
+	padding: 20px;
+}
+form.glass{
+	border-top: 5px solid #a5f2f7;
+	border-left: 5px solid #a5f2f7;
+	border-radius: 5px;		
+}
+fieldset{
+	border: none;
+	padding: 0;
+	margin: 0;
+}
+form ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+label{
+	width: 200px;
+	display: inline-block;
+}
+form input[type=text], input[type=email], input[type=tel]{
+	width: 300px;
+	height: 30px;
+	font-size: 16px;
+	background: #02121c;
+	color: #fff;
+	padding: 3px 3px 3px 8px;
+	border-radius: 3px;
+	-webkit-box-shadow: inset 0 0 40px 0 #7fc0c4;
+    box-shadow: inset 0 0 40px 0 #7fc0c4;
+	border: 2px solid #7fc0c4;
+}
+input[type=submit], input[type=reset]{
+	width: 200px;
+	height: 50px;
+	background: transparent url(../images/submit.png) no-repeat;
+	background-position: 0 0;
+	color: #fff;
+	font-size: 16px;
+	border: none;
+	margin: 20px 0 0 0;
+}
+input[type=submit]:hover, input[type=reset]:hover,
+input[type=submit]:active, input[type=reset]:active{
+	cursor: pointer;
+	background-position: 0 -148px;
+}
+form li input.error{
+	border: 2px solid #d01414; 
+}
+
+/** map **/
+
+#map-outerbox{
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	top: -1000px;
+	left: -1000px;
+	border-bottom: 5px solid #a5f2f7;
+	border-left: 5px solid #a5f2f7;
+	border-radius: 5px;		
+}
+#map-container{
+	width: 200px;
+	height: 200px;
+	border: 3px solid;
+	position: relative;
+	top: 30px;
+	left: 20px;
+}
+#map-outerbox .close{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	text-indent: -9999px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+	background: transparent url(../images/close.png) no-repeat 0 0;
+}
+#map-outerbox a:hover, #map-outerbox a:active{
+	background-position: 0 -21px;
+}
+
+/** Footer **/
+
+#footer{
+	margin: 25px 0 0 0;
+	border-top: 2px solid #06202c;
+}
+#footer p{
+	width: 500px;
+	margin: 15px auto 0;
+	font-size: 12px;
+}
