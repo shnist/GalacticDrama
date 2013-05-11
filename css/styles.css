@@ -1,78 +1,43 @@
 /** Styles for Galaxy Drama **/
 
+/**
+	Common styles
+*/
 
-@media screen and (max-width: 480px) {
-	#content{
-		width: 400px;
-	}
-	.col{
-		width: 377px;
-	}
-	h1{
-		font-size: 50px;
-	}
-	#introduction li{
-		width: 360px;
-	}
-	#footer p{
-		width: 360px;
-	}
-	#map-outerbox{
-		position: inherit;
-		margin: 0 auto 10px;
-	}
-	#map-outerbox .close{
-		position: inherit;
-		float: left;
-		margin: 5px 0 0 5px;
-	}
-	#map-container{
-		left: 0;
-	}
-	form{
-		padding: 0;
-	}
-	form li{
-		margin: 15px 0 15px 15px;
-	}
-}
-
-
-/** fonts **/
 
 /** star jedi hollow **/
 @font-face {
-    font-family: 'Star Jedi Hollow';
-    src: url(../fonts/star_jedi_hollow/starjhol-webfont.eot);
-    src: url(../fonts/star_jedi_hollow/starjhol-webfont.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/star_jedi_hollow/starjhol-webfont.woff) format('woff'),
-         url(../fonts/star_jedi_hollow/starjhol-webfont.ttf) format('truetype'),
-         url(../fonts/star_jedi_hollow/starjhol-webfont.svg#StarJediHollowRegular) format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'Star Jedi Hollow';
+	src: url(../fonts/star_jedi_hollow/starjhol-webfont.eot);
+	src: url(../fonts/star_jedi_hollow/starjhol-webfont.eot?#iefix) format('embedded-opentype'),
+		 url(../fonts/star_jedi_hollow/starjhol-webfont.woff) format('woff'),
+		 url(../fonts/star_jedi_hollow/starjhol-webfont.ttf) format('truetype'),
+		 url(../fonts/star_jedi_hollow/starjhol-webfont.svg#StarJediHollowRegular) format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 /** star jedi double **/
 @font-face {
-    font-family: 'StarJediLogoDoubleLine1';
-    src: url(../fonts/star_jedi_double/stjldbl1-webfont.eot);
-    src: url(../fonts/star_jedi_double/stjldbl1-webfont.eot?#iefix) format('embedded-opentype'),
-         url(../fonts/star_jedi_double/stjldbl1-webfont.woff) format('woff'),
-         url(../fonts/star_jedi_double/stjldbl1-webfont.ttf) format('truetype'),
-         url(../fonts/star_jedi_double/stjldbl1-webfont.svg#StarJediLogoDoubleLine1Rg) format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'StarJediLogoDoubleLine1';
+	src: url(../fonts/star_jedi_double/stjldbl1-webfont.eot);
+	src: url(../fonts/star_jedi_double/stjldbl1-webfont.eot?#iefix) format('embedded-opentype'),
+		 url(../fonts/star_jedi_double/stjldbl1-webfont.woff) format('woff'),
+		 url(../fonts/star_jedi_double/stjldbl1-webfont.ttf) format('truetype'),
+		 url(../fonts/star_jedi_double/stjldbl1-webfont.svg#StarJediLogoDoubleLine1Rg) format('svg');
+	font-weight: normal;
+	font-style: normal;
 
 }
 /** tie wing **/
 @font-face {
-    font-family: 'TIE-Wing';
-    src: url('../fonts/tie_wing/tiewing-webfont.eot');
-    src: url('../fonts/tie_wing/tiewing-webfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/tie_wing/tiewing-webfont.woff') format('woff'),
-         url('../fonts/tie_wing/tiewing-webfont.ttf') format('truetype'),
-         url('../fonts/tie_wing/tiewing-webfont.svg#TIE-WingRegular') format('svg');
-    font-weight: normal;
-    font-style: normal;
+	font-family: 'TIE-Wing';
+	src: url('../fonts/tie_wing/tiewing-webfont.eot');
+	src: url('../fonts/tie_wing/tiewing-webfont.eot?#iefix') format('embedded-opentype'),
+		 url('../fonts/tie_wing/tiewing-webfont.woff') format('woff'),
+		 url('../fonts/tie_wing/tiewing-webfont.ttf') format('truetype'),
+		 url('../fonts/tie_wing/tiewing-webfont.svg#TIE-WingRegular') format('svg');
+	font-weight: normal;
+	font-style: normal;
 }
 
 
@@ -82,10 +47,6 @@ body, html{
 	color: #FFF;
 	background: #000 url(../images/bg_stars.jpg) repeat-x;
 	font-family: Droid Sans, Verdana, sans-serif;
-}
-#content{
-	margin: 0 auto;
-	width: 950px;
 }
 #gradient{
 	background: transparent url(../images/bg_gradient.png) repeat-x;
@@ -113,20 +74,17 @@ pre{
 	font-family: TIE-Wing, sans-serif;
 	font-size: 20px;
 }
-
-
-
-/** common classes **/
-
-.hidden{
-	display: none;
+#content {
+	margin: 0 auto;
 }
+
+/**
+	common classes
+*/
+
 .glass{
 	-webkit-box-shadow: inset 2px 2px 13px 1px #7fc0c4;
-    box-shadow: inset 2px 2px 13px 1px #7fc0c4;
-}
-.invisible{
-	opacity: 0;
+	box-shadow: inset 2px 2px 13px 1px #7fc0c4;
 }
 .error{
 	color: #d01414;
@@ -137,15 +95,15 @@ pre{
 	display: block;
 }
 
-/** Headings **/
+/**
+	Headings
+*/
 
 h1{
 	text-align: center;
 	font-family:'Star Jedi Hollow', sans-serif;
-	font-size: 100px;
 	margin: 10px 0 20px 0;
 	padding: 0;
-	line-height: 100px;
 }
 h2, em{
 	font-family: 'StarJediLogoDoubleLine1', sans-serif;
@@ -169,11 +127,11 @@ h2, em{
 .nav a {
 	font-family: 'StarJediLogoDoubleLine1', sans-serif;
 	padding: 20px;
-	font-size: 30px;
 }
 
-
-/** content **/
+/**
+	content
+**/
 
 li, p{
 	font-size: 16px;
@@ -201,7 +159,6 @@ li em:hover{
 	list-style: none;
 	margin: 0 auto;
 	padding: 0;
-	max-width: 550px;
 }
 #introduction li{
 	margin: 10px auto 10px;
@@ -217,15 +174,11 @@ li em:hover{
 	border-top: 3px solid #fff;
 }
 .col{
-	width: 435px;
-	display: inline-block;
-	vertical-align: top;
 	margin: 20px 10px 0 0;
 	padding: 10px 0 10px 17px;
 	border-top: 5px solid #a5f2f7;
 	border-left: 5px solid #a5f2f7;
 	border-radius: 5px;
-	min-height: 220px;
 }
 .list-details{
 	list-style: none;
@@ -292,7 +245,7 @@ input[type=text], input[type=email], input[type=tel], textarea{
 	color: #fff;
 	border-radius: 3px;
 	-webkit-box-shadow: inset 0 0 40px 0 #7fc0c4;
-    box-shadow: inset 0 0 40px 0 #7fc0c4;
+	box-shadow: inset 0 0 40px 0 #7fc0c4;
 	border: 2px solid #7fc0c4;
 }
 textarea {
@@ -322,8 +275,6 @@ form li input.error{
 /** map **/
 
 #map-outerbox{
-	width: 550px;
-	height: 550px;
 	position: absolute;
 	top: -1000px;
 	left: -1000px;
@@ -332,8 +283,6 @@ form li input.error{
 	border-radius: 5px;
 }
 #map-container{
-	width: 500px;
-	height: 500px;
 	border: 3px solid;
 	position: relative;
 	top: 30px;
@@ -371,7 +320,6 @@ form li input.error{
 	border-top: 2px solid #06202c;
 }
 #footer p{
-	width: 500px;
 	margin: 15px auto 0;
 	font-size: 12px;
 }
@@ -396,12 +344,87 @@ form li input.error{
 	display: block;
 	margin: 10px 0 20px 0;
 }
-.parties .col {
-	min-height: 310px;
-}
 .contact-strap {
 	font-size: 18px;
 }
 .contact-strap a {
 	font-size: 20px;
+}
+
+
+
+@media screen and (max-width:479px) {
+  /* Target portrait smartphones */
+	#content{
+		width: 400px;
+	}
+	.col{
+		width: 377px;
+	}
+	h1{
+		font-size: 50px;
+	}
+	#introduction li{
+		width: 360px;
+	}
+	#footer p{
+		width: 360px;
+	}
+	#map-outerbox{
+		position: inherit;
+		margin: 0 auto 10px;
+	}
+	#map-outerbox .close{
+		position: inherit;
+		float: left;
+		margin: 5px 0 0 5px;
+	}
+	#map-container{
+		left: 0;
+	}
+	form{
+		padding: 0;
+	}
+	form li{
+		margin: 15px 0 15px 15px;
+	}
+}
+
+@media screen and (min-width:480px) {
+	/* Target landscape smartphones, portrait tablets, narrow desktops
+
+	*/
+	#content{
+		width: 950px;
+	}
+	h1{
+		font-size: 100px;
+		line-height: 100px;
+	}
+	.nav a {
+		font-size: 30px;
+	}
+	.col{
+		width: 435px;
+		display: inline-block;
+		vertical-align: top;
+		min-height: 220px;
+	}
+	#introduction{
+		max-width: 550px;
+	}
+	#map-outerbox{
+		width: 550px;
+		height: 550px;
+	}
+	#map-container{
+		width: 500px;
+		height: 500px;
+	}
+	#footer p{
+		width: 500px;
+	}
+	.parties .col {
+		min-height: 310px;
+	}
 }
