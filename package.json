@@ -1,0 +1,17 @@
+{
+  "name": "galacticdrama",
+  "version": "1.0.0",
+  "description": "Galactic drama",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/shnist/GalacticDrama.git"
+  },
+  "readmeFilename": "README.md",
+  "gitHead": "195e9d216f51986e4a10d0b9991600ed3c166684",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-clean": "~0.4.1",
+    "grunt-contrib-copy": "~0.4.1",
+    "grunt-ftp-deploy": "0.0.9"
+  }
+}
