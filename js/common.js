@@ -45,7 +45,7 @@ map = {
 	},
 	destroy: function () {
 		$('#map-outerbox').remove();
-		$('a').one('click', function (e) {
+		$('#map-link').one('click', function (e) {
 			e.preventDefault();
 			map.init();
 		});

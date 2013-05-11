@@ -356,6 +356,7 @@ form li input.error{
 	background: #fff;
 	text-decoration: none;
 	font-family: Star Jedi Hollow, sans-serif;
+	text-align: center;
 }
 #map-outerbox a:hover,
 #map-outerbox a:active{
