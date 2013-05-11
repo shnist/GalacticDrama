@@ -143,8 +143,9 @@ h1{
 	text-align: center;
 	font-family:'Star Jedi Hollow', sans-serif;
 	font-size: 100px;
-	margin: 10px 0 0 0;
+	margin: 10px 0 20px 0;
 	padding: 0;
+	line-height: 100px;
 }
 h2, em{
 	font-family: 'StarJediLogoDoubleLine1', sans-serif;
@@ -194,9 +195,7 @@ li em:hover{
 	font-size: 20px;
 	margin: 0 0 10px 0;
 	padding: 0 0 20px 0;
-	border-bottom: 3px solid #FFF;
 }
-
 #introduction{
 	text-align: left;
 	list-style: none;
@@ -228,7 +227,7 @@ li em:hover{
 	border-radius: 5px;
 	min-height: 220px;
 }
-.col ul{
+.list-details{
 	list-style: none;
 	margin: 0;
 	padding: 0;
@@ -285,17 +284,21 @@ label{
 	width: 200px;
 	display: inline-block;
 }
-form input[type=text], input[type=email], input[type=tel]{
+input[type=text], input[type=email], input[type=tel], textarea{
 	width: 300px;
-	height: 30px;
+	padding: 5px;
 	font-size: 16px;
 	background: #02121c;
 	color: #fff;
-	padding: 3px 3px 3px 8px;
 	border-radius: 3px;
 	-webkit-box-shadow: inset 0 0 40px 0 #7fc0c4;
     box-shadow: inset 0 0 40px 0 #7fc0c4;
 	border: 2px solid #7fc0c4;
+}
+textarea {
+	resize: none;
+	height: 150px;
+	width: 500px;
 }
 input[type=submit], input[type=reset]{
 	width: 200px;
@@ -370,4 +373,34 @@ form li input.error{
 	width: 500px;
 	margin: 15px auto 0;
 	font-size: 12px;
+}
+
+
+/**
+	Parties page
+*/
+
+.hook-line {
+	font-size: 25px;
+	margin: 10px 0 0 0;
+}
+.parties .columns {
+	border-top: none;
+}
+.detailed-information {
+	margin: 10px 0 0 0;
+}
+.detailed-information label {
+	width: auto;
+	display: block;
+	margin: 10px 0 20px 0;
+}
+.parties .col {
+	min-height: 310px;
+}
+.contact-strap {
+	font-size: 18px;
+}
+.contact-strap a {
+	font-size: 20px;
 }

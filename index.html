@@ -20,7 +20,6 @@
 	<body>
 		<div id="content">
 			<h1>Jedi Drama</h1>
-			<p id="strap-line">Are you or your kids mad on <em>Star Wars?</em></p>
 			<ul class="nav">
 				<li>
 					<a href="#register-form">sign up</a>
@@ -29,6 +28,7 @@
 					<a href="parties.html">jedi parties</a>
 				</li>
 			</ul>
+			<p id="strap-line">Are you or your kids mad on <em>Star Wars?</em></p>
 			<ul id="introduction">
 				<li>
 					<pre>&lt;</pre> This could be the best way to learn to use the force ever!!
@@ -45,7 +45,7 @@
 			<div class="columns">
 				<div class="col glass">
 					<h2>You will learn</h2>
-					<ul>
+					<ul class="list-details">
 						<li>
 							<pre>&lt;</pre> Lightsaber skills as well as lightsaber duelling
 						</li>
@@ -63,8 +63,11 @@
 				</div>
 				<div class="col glass">
 					<h2>Am i old enough?</h2>
-					<ul>
-					<li><pre>&lt;</pre><p>Lessons will be structured according to age.</p></li>
+					<ul class="list-details">
+						<li>
+							<pre>&lt;</pre>
+							<p>Lessons will be structured according to age.</p>
+						</li>
 					</ul>
 				</div>
 			</div>
@@ -76,11 +79,11 @@
 					<ul>
 						<li>
 							<label for="given-name">Your first name:*</label>
-							<input type="text" id="given-name" name="given-name">
+							<input type="text" id="given-name" name="given-name" required maxlength="25">
 						</li>
 						<li>
 							<label for="family-name">Your surname:*</label>
-							<input type="text" id="family-name" name="family-name">
+							<input type="text" id="family-name" name="family-name" required maxlength="30">
 						</li>
 					</ul>
 				</fieldset>
@@ -88,15 +91,15 @@
 					<ul>
 						<li>
 							<label for="child-given-name">Child's first name:*</label>
-							<input type="text" id="child-given-name" name="child-given-name">
+							<input type="text" id="child-given-name" name="child-given-name" required maxlength="25">
 						</li>
 						<li>
 							<label for="child-family-name">Child's surname:*</label>
-							<input type="text" id="child-family-name" name="child-family-name">
+							<input type="text" id="child-family-name" name="child-family-name" required maxlength="30">
 						</li>
 						<li>
 							<label for="child-age">Child's age:*</label>
-							<input type="text" id="child-age" name="child-age">
+							<input type="text" id="child-age" name="child-age" required maxlength="2">
 						</li>
 					</ul>
 				</fieldset>
@@ -104,11 +107,11 @@
 					<ul>
 						<li>
 							<label for="email">Email address:*</label>
-							<input type="email" id="email" name="email">
+							<input type="email" id="email" name="email" required maxlength="75">
 						</li>
 						<li>
 							<label for="telephone">Contact Number:</label>
-							<input type="tel" id="telephone" name="telephone">
+							<input type="tel" id="telephone" name="telephone" maxlength="20">
 						</li>
 					</ul>
 				 </fieldset>

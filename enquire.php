@@ -1,6 +1,6 @@
 <html>
 	<head>
-        <title>Jedi Drama</title>
+        <title>Jedi Parties</title>
         <meta http-equiv="Content-Type" content="text/html; charset=utf-8" >
         <meta name="description" content="A brand new weekly class in Drama that will teach you the skills of a Jedi as well as the core skills of acting
         in the centre of Gloucester">
@@ -22,28 +22,26 @@
 						// all values of the form stored in variables
 						$givenName = $_POST['given-name'];
 						$familyName = $_POST['family-name'];
-						$childGivenName = $_POST['child-given-name'];
-						$childFamilyName = $_POST['child-family-name'];
-						$age = $_POST['child-age'];
 						$email = $_POST['email'];
 						$telNo = $_POST['telephone'];
+						$details = $_POST['details'];
 
 						// helpmeobi1@live.com
-						$toEmail = 'helpmeobi1@live.com';
-						$emailSubject = 'Galactic Drama Interest';
+						$toEmail = 'shnist@btinternet.com';
+						$emailSubject = 'Jedi Party Booking';
 						$mailheader = "From: ".$email."\r\n";
 						$mailheader .= "Reply-To: ".$email."\r\n";
 						$mailheader .= "Content-type: text/html; charset=iso-8859-1\r\n";
 						// creating the email message
-						$body = "Parent's Name: ".$givenName." ".$familyName;
-						$body .= " Child's Name: ".$childGivenName." ".$childFamilyName;
-						$body .= " Child's Age: ".$age." ";
+						$body = "Name: ".$givenName." ".$familyName;
 						$body .= " Email: ".$email." ";
 						$body .= " Tel: ".$telNo." ";
+						$body .= " Details: ".$details." ";
+
 						mail($toEmail, $emailSubject, $body, $mailheader) or die ("Failure");
 
-						echo "<p id='strap-line'>Thanks for registering your interest. We'll get back to you shortly!
-							<a href='index.html' class='back'>Back to Home Page</a></p>";
+						echo "<p id='strap-line'>Thanks for your enquiry. We'll get back to you shortly!
+							<a href='parties.html' class='back'>Back to Jedi Party</a></p>";
 					}
 				?>
 		</div>

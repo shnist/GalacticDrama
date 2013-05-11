@@ -8,7 +8,7 @@ module.exports = function(grunt) {
 				files: [
 					{
 						expand: true,
-						src: ['css/','js/','fonts/','images/','*.html','*.php','*.txt'],
+						src: ['css/**','js/**','fonts/**','images/**','*.html','*.php','*.txt'],
 						dest: 'dist/'
 					}
 				]
@@ -21,9 +21,9 @@ module.exports = function(grunt) {
 					port: 21,
 					authKey: 'galacticDramaKey'
 				},
-				src: 'dist/',
+				src:'dist',
 				// .ftppass with details is needed (not included in repo)
-				dest: '/htdocs/galacticDrama/',
+				dest: '/htdocs/galacticDrama',
 				exclusions: ['dist/.DS_Store', 'dist/Thumbs.db', 'dist/tmp', 'dist/.git']
 			}
 		}
