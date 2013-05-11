@@ -251,7 +251,6 @@ input[type=text], input[type=email], input[type=tel], textarea{
 textarea {
 	resize: none;
 	height: 150px;
-	width: 500px;
 }
 input[type=submit], input[type=reset]{
 	width: 200px;
@@ -365,10 +364,10 @@ form li input.error{
 		font-size: 50px;
 	}
 	#introduction li{
-		width: 360px;
+		width: 100%
 	}
 	#footer p{
-		width: 360px;
+		width: 100%
 	}
 	#map-outerbox{
 		position: inherit;
@@ -426,5 +425,10 @@ form li input.error{
 	}
 	.parties .col {
 		min-height: 310px;
+	}
+	textarea {
+		resize: none;
+		height: 150px;
+		width: 500px;
 	}
 }
