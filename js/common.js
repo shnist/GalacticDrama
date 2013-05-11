@@ -1,34 +1,7 @@
 var effects = {} || window.effects;
 effects = {
-	hide: function ($element) {
-		$element.addClass('hidden');
-	},
 	slide: function ($element) {
-		// hide all the contents inside the element first
-		$('input[type=submit], input[type=reset], label, fieldset input', $element).addClass('invisible');
-
-		if ($element.hasClass('hidden')) {
-			$element.slideDown(2000, function () {
-				$element.addClass('glass');
-				var timer = setTimeout(function () {
-					effects.showContent($element);
-				}, 500);
-			});
-			$element.removeClass('hidden');
-		} else {
-			$element.slideUp(function () {
-				$element.removeClass('glass');
-				//$('input, label', $element).css({opacity: 0});
-			});
-			$element.addClass('hidden');
-
-		}
-	},
-	arrow: function ($element) {
-		$element.removeClass('down').addClass('up');
-	},
-	showContent: function ($element) {
-		$('input[type=submit], input[type=reset], label, fieldset input', $element).removeClass('invisible');
+		$element.removeClass('hidden');
 	}
 };
 
@@ -38,12 +11,12 @@ map = {
 		var id = 'map-container';
 
 		$('#introduction').append('<div id="map-outerbox" class="glass">' +
-			'<a href="#" class="close" title="Close">X</a><div id="' + id + '"></div>' +
+			'<a href="#" class="close glass" title="Close">X</a><div id="' + id + '"></div>' +
 			'</div>');
 
 		$('#map-outerbox').css({
 			left: (window.innerWidth / 2) - $('#map-outerbox').width() / 2,
-			top: 40
+			top: $(window).scrollTop() + 40
 		});
 
 		this.createMap(id);
@@ -114,12 +87,11 @@ form = {
 
 $(document).ready(function () {
 	effects.hide($('form'));
-	$('#register-title span').on('click', function () {
-		$(this).toggleClass('clicked');
+	$('.register-title a').one('click', function () {
 		effects.slide($('.slide'));
-		effects.arrow($('#register-title'));
+		$('html').scrollTop($('form').scrollTop());
 	});
-	$('a').one('click', function (e) {
+	$('#map-link').one('click', function (e) {
 		e.preventDefault();
 		map.init();
 	});
