@@ -25,7 +25,7 @@
 						$details = $_POST['details'];
 
 						// helpmeobi1@live.com
-						$toEmail = 'shnist@btinternet.com';
+						$toEmail = 'helpmeobi1@live.com';
 						$emailSubject = 'Jedi Party Booking';
 						$mailheader = "From: ".$email."\r\n";
 						$mailheader .= "Reply-To: ".$email."\r\n";
